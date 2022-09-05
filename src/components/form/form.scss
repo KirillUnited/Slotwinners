@@ -1,0 +1,124 @@
+@import "../../styles/utilities";
+
+.vw-form {
+    $font-size: 12px;
+    background-image: url("../../images/vip club web@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #111332;
+    box-shadow: 0px 16px 54px rgba(8, 10, 22, 0.2), 0px 8px 20px rgba(8, 10, 22, 0.4);
+    border-radius: 12px;
+
+    &-block {
+        position: relative;
+        padding: 24px 30px;
+
+        &.has-img {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        & + .vw-form-block {
+            border-top: 1px solid #373D76;
+        }
+    }
+
+    &-title {
+        font-size: getMinMax(18px, 23px);
+        line-height: calc(32/23)*1em;
+    }
+
+    &-input,
+    input {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: calc(10px / $font-size) * 1em calc(16px / $font-size) * 1em;
+        background-color: #202255;
+        border: 1px solid transparent;
+        transition: all 180ms ease-in-out;
+        box-shadow: none;
+        margin-bottom: 0;
+        line-height: 1;
+        color: #9EA3D8;
+
+        @include input-placeholder {
+            color: #9EA3D8;
+        }
+
+        &:focus {
+            outline: 0;
+            outline-offset: 0;
+        }
+    }
+
+    &-group {
+        width: 100%;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 148px;
+        gap: 8px;
+        margin-top: getMinMax(24px, 24px);
+
+        button {
+            flex: 0 0 148px;
+        }
+        input {
+            flex: 1;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        margin: 0 auto;
+        transform: translateX(-50%);
+    }
+
+    input,
+    button {
+        font-size: getMinMax(12px, 12px);
+        min-height: getMinMax(44px, 44px);
+        border-radius: calc(8px / $font-size) * 1em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .privacy {
+        font-size: 11px;
+        line-height: calc(18/11)*1em;
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    }
+
+    @include less-sm(){
+        &-group {
+            grid-template-columns: auto;
+            button,
+            input {
+                flex: 0 0 100%;
+            }
+        }
+        &-block {
+            &.has-img {
+                padding-top: getvw(50px);
+                padding-bottom: getvw(50px);
+            }
+        }
+        &-img {
+            top: -40px;
+            width: getvw(160px);
+        }
+    }
+}

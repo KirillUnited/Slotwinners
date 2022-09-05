@@ -1,0 +1,54 @@
+@import "../../styles/utilities";
+
+.footer {
+    &-inner {
+        display: grid;
+        grid-template-columns: 1fr min(100%, 420px);
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: getMinMax(40px, 40px);
+        padding-bottom: getMinMax(40px, 64px);
+    }
+
+    //&-info {
+    //    width: min(100%, 648px);
+    //    font-size: 12px;
+    //}
+
+    &-form {
+        //width: min(100%, 420px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        //gap: 20px;
+        &>*+* {
+            margin-top: 20px;
+        }
+    }
+
+    &-icons {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        flex-wrap: wrap;
+        align-items: center;
+        gap: getMinMax(48px, 48px);
+    }
+
+    p {
+        font-size: getMinMax(12px, 12px);
+        line-height: calc(20/12)*1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include less-sm() {
+        &-inner {
+            grid-template-columns: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

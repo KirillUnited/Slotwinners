@@ -1,0 +1,39 @@
+:root {
+    --font-main: 'Syne', sans-serif;    
+    --font: 'Noto Sans', sans-serif;
+    --body-bg-color: #171925;
+    --bg-color-accent: linear-gradient(91.85deg, #2B41F5 0.85%, #B71BEE 99.28%);
+    --bg-color-accent-hover: linear-gradient(91.85deg, #5C6DF7 0.85%, #C64AF2 99.28%);
+    --text-color-1: #FFFFFF;
+    --text-color-2: rgba(255, 255, 255, 0.64);
+    --color-secondary: #3040F5;
+    --color-contrast: #FFFFFF;
+    --color-error: #F64B4B;
+    --logo-color: var(--text-color-1);
+}
+
+$grid-breakpoints: (
+    "xs": 576px,
+    "sm": 767px,
+    "md": 991px,
+    "lg": 1199px,
+    "xl": 1376px
+);
+$base: 16px;
+$base-container: 1248px;
+$base-viewport-mobile: 375px;
+$typography-variants: h1,
+h2,
+h3,
+h4;
+$h1-font-size: 56px !default;
+$h2-font-size: 32px !default;
+$h3-font-size: 21px !default;
+$h4-font-size: 18px !default;
+$text-font-size: 16px !default;
+$h1-font-size-sm: 28px !default;
+$h2-font-size-sm: 24px !default;
+$h3-font-size-sm: 21px !default;
+$h4-font-size-sm: 18px !default;
+$text-font-size-sm: 14px !default;
+$header-height: 93px;

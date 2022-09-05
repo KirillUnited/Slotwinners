@@ -1,0 +1,51 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: var(--text-color-2);
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--body-bg-color);
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vw-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.vw-content {
+    flex: 1 0 auto;
+}
+
+.vw-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: Min(100% - #{getrem(48px)}, #{getrem($base-container)});
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.vw-section {
+    position: relative;
+
+    &-header {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+}
+
+@include less-sm {
+    .vw-container {
+        max-width: 100%;
+    }
+}

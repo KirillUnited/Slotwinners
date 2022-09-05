@@ -1,0 +1,203 @@
+@import "../../styles/utilities";
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    // width: Min(100%, getrem(364px));
+    background: var(--color-2);
+    box-shadow: 0px 16px 54px rgba(19, 21, 47, 0.4), 0px 8px 20px rgba(18, 21, 48, 0.6);
+    border-radius: getMinMax(12px, 12px);
+    overflow: hidden;
+
+    &-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        //gap: getMinMax(10px, 10px);
+        padding: getMinMax(18px, 24px);
+
+        &>*:not(:first-child) {
+            margin-top: getMinMax(10px, 10px);
+        }
+
+        .card-primary & {
+            //gap: getMinMax(20px, 24px);
+            &>*:not(:first-child) {
+                margin-top: getMinMax(20px, 24px);
+            }
+            @include more-sm() {
+                padding: getMinMax(18px, 40px) getMinMax(18px, 80px);
+            }
+        }
+    }
+
+    &-banner {
+        --width: 364;
+        --height: 190;
+
+        @include get-aspect-ratio();
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+
+        &-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .card-primary & {
+                width: getMinMax(150px, 246px);
+            }
+        }
+
+        .card-primary & {
+            height: 100%;
+            padding-bottom: 0;
+            clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #535353;
+                mix-blend-mode: multiply;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &-title {
+        margin-bottom: 0;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        //gap: getMinMax(10px, 10px);
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            & + .card-info-item:not(:first-child) {
+                margin-top: getMinMax(10px, 10px);
+            }
+
+            & > svg {
+                width: getMinMax(10px, 12px);
+                height: getMinMax(10px, 12px);
+                path {
+                    fill: var(--text-color-2);
+                }
+            }
+            &>*+* {
+                margin-left: getMinMax(10px, 10px);
+            }
+        }
+
+        &-text {
+            flex: 1;
+        }
+    }
+
+    &-badge {
+        position: absolute;
+        top: getMinMax(12px, 16px);
+        left: getMinMax(12px, 16px);
+        color: #F2F2F2;
+        font-size: getMinMax(12px, 14px);
+        font-weight: 600;
+        z-index: 1;
+
+        &-label {
+            width: getMinMax(27px, 34px);
+
+            .card-rating & {
+                width: getMinMax(58px, 64px);
+            }
+        }
+
+        &-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            //gap: 5px;
+            padding: 5px;
+        }
+
+        &-icon {
+            width: getMinMax(15px, 15px);
+            height: getMinMax(15px, 15px);
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &.card-rating {
+            left: auto;
+            right: getMinMax(12px, 16px);
+            color: #FFA53C;
+        }
+
+        &.card-badge-primary {
+            color: #EEBEFF;
+
+            .card-badge-label {
+                width: getMinMax(99px, 109px);
+            }
+        }
+    }
+
+    &-primary {
+        width: 100%;
+        background-image: url("../../images/offer mobile@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom -1px;
+        border: 1px solid #3343CD;
+
+        .card {
+            &-info {
+                &-item {
+                    color: #F5BA40;
+                    &>svg path {
+                        fill: #F5BA40;
+                    }
+                }
+            }
+        }
+    }
+
+    @include more-sm() {
+        &-primary {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            background-image: url("../../images/offer web@2x.png");
+        }
+    }
+
+    @include less-sm() {
+        &-banner {
+            --width: 350;
+            --height: 105;
+
+            .card-primary & {
+                height: getMinMax(200px, 312px);
+                padding-bottom: 0;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            }
+        }
+    }
+}
