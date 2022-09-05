@@ -1,21 +1,8 @@
 import React from 'react';
-import "./button.scss";
-import { Link } from 'gatsby';
 
-const Button = ({ text, type, ...rest }) => {
-    return (
-        <>
-            {type === "link"
-                ? (
-                    <Link to='/' className='button' {...rest}>
-                        {text}
-                    </Link>
-                )
-                : (
-                    <button className={`button`} {...rest}>{text}</button>
-                )
-            }
-        </>
+const Button = ({ children, state, ...rest }) => {
+    return (        
+        <button className={`button ${state || ''}`} {...rest}>{children}</button>
     )
 };
 

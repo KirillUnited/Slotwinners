@@ -1,0 +1,30 @@
+a.button,
+.button {
+    $fonstSize: getMinMax(16px, 16px);
+    $height: getMinMax(44px, 44px);
+    --border-radius: #{calc(6/15)*1em};
+    --border-color-invert: rgba(255, 255, 255, 0.2);
+    --bg-color-invert-hover: rgba(255, 255, 255, 0.12);
+
+    @include button($fonstSize, $height);
+    background: var(--bg-color-accent);
+    background-clip: padding-box;
+    border-radius: var(--border-radius);
+    border: none;
+
+    &:hover,
+    &:focus {
+        background: var(--bg-color-accent-hover);
+        background-clip: padding-box;
+    }
+
+    &-invert {
+        background: transparent;
+        border: 1px solid var(--border-color-invert);
+
+        &:hover,
+        &:focus {
+            background: var(--bg-color-invert-hover);
+        }
+    }
+}

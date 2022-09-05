@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import * as React from "react";
 import { menuItems } from "./header.data";
 import logo from "../../images/logo.svg";
+import Button from "../button/button";
 
 const Header = (props) => (
   <header className="header has-img-fit">
@@ -29,9 +30,9 @@ const Header = (props) => (
             })}
           </ul>
         </nav>
-        <div className="header-item">
-          <button className={`button`}>Login</button>
-          <button className={`button`}>Sign up</button>
+        <div className="header-item header-signup">
+          <Button state="button-invert">Login</Button>
+          <Button>Sign up</Button>
         </div>
       </div>
     </div>

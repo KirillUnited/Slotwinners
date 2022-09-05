@@ -7,13 +7,17 @@
     }
 
     &-item {
+        flex: 0 0 getrem(288px);
+    }
+
+    &-navbar {
         flex: 1;
     }
 
     &-menu {
         display: flex;
         align-items: center;
-        gap: Min(#{getvw(5px)}, #{getrem(5px)});
+        justify-content: center;
 
         &-item {
             color: var(--text-color-1);
@@ -28,7 +32,7 @@
         display: inline-flex;
         align-items: center;
         min-height: calc(48px/17px)*1em;
-        font-family: 'Syne';
+        font-family: 'Syne', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: Min(getvw(17px), getrem(17px));
@@ -40,6 +44,21 @@
             width: calc(16/17)*1em;
             height: calc(16/17)*1em;
             margin-right: calc(8/17)*1em;
+        }
+    }
+
+    .header-signup {
+        display: flex;
+        justify-content: end;
+
+        &>*+* {
+            margin-left: getrem(16px);
+        }
+
+        .button-invert {
+            --border-color-invert: #fff;
+
+            border-width: 2px;
         }
     }
 
