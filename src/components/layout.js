@@ -23,8 +23,19 @@ const Layout = ({ children }) => {
   )
 }
 
+const Section = ({ children }) => {
+  return (
+      <div className='vw-section'>
+          <div className='vw-container'>
+              <div className='vw-section-content'>{children}</div>
+          </div>
+      </div>
+  )
+};
+
+export default Layout;
+export {Section};
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-export default Layout;

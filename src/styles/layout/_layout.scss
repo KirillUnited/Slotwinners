@@ -30,7 +30,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: Min(100% - #{getrem(48px)}, #{getrem($base-container)});
+    width: Min(100% - #{getMinMax(48px, 48px)}, #{getrem($base-container)});
     margin-right: auto;
     margin-left: auto;
 }
@@ -38,9 +38,9 @@ body {
 .vw-section {
     position: relative;
 
-    &-header {
-        padding-top: 3vh;
-        padding-bottom: 3vh;
+    &-content {
+        padding-top: getMinMax(30px, 30px);
+        padding-bottom: getMinMax(15px, 15px);
     }
 }
 
