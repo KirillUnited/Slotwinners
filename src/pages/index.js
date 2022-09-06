@@ -1,31 +1,13 @@
-import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout, { Section } from "../components/layout";
+import Banner from "../components/banner/banner";
 import Seo from "../components/seo";
 
 export default function IndexPage() {
   return (
     <Layout>
       <Section>
-        <div className="vw-grid">
-          <div className="vw-grid-item">
-            <StaticImage
-            src="../images/hero.png"
-            alt="Canada’s #1 
-            Social Casino 
-            Experience"
-            />
-          </div>
-          <div className="vw-grid-item">
-            <h1>Canada’s #1
-              Social Casino
-              Experience</h1>
-            <h4>
-              Enjoy playing the most popular online slots.
-              Free, fun and legal!
-            </h4>
-          </div>
-        </div>
+        <Banner />
       </Section>
       <Section>
         <h2>Most popular games 2021</h2>

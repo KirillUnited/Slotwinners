@@ -1,0 +1,14 @@
+.vw-banner {
+    --column-width: 320px;
+    --gap: #{getMinMax(24px, 48px)};
+    align-items: center;
+
+    &-subtitle {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: getMinMax(16px, 22px);
+        line-height: 145%;
+        color: #FFFFFF;
+    }
+}
