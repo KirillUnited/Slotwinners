@@ -61,6 +61,7 @@
         }
 
         &:hover,
+        &:focus,
         &-active {
             &::after {
                 opacity: 1;
@@ -90,6 +91,7 @@
     }
 
     .menuToggle {
+        vertical-align: top;
         width: getMinMax(26px, 26px);
         height: getMinMax(26px, 26px);
         appearance: none;
@@ -118,12 +120,10 @@
 
             opacity: 0;
             pointer-events: none;
-            //transform: scale(0);
             transition: opacity var(--animation);
 
             .header-menu-active & {
                 opacity: 1;
-                //transform: scale(1);
                 pointer-events: all;
             }
 

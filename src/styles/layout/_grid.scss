@@ -6,8 +6,8 @@
     grid-gap: var(--gap);
 
     &[class*="grid-col"] {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--column-width, 100%)), 1fr));
-    }    
+        grid-template-columns: repeat(var(--col-adapt, auto-fit), minmax(min(100%, var(--column-width, 100%)), 1fr));
+    }
 
     &-col-2 {
         --column-width: 600px;
@@ -16,5 +16,9 @@
 
     &-col-4 {
         --column-width: 276px;
+    }
+
+    &-col-fill {
+        --col-adapt: auto-fill;
     }
 }
