@@ -3,11 +3,14 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div class="vw-banner vw-grid vw-grid-col-2">
+        <div className="vw-banner vw-grid vw-grid-col-2">
             <div className="vw-banner-item">
                 <StaticImage
-                    src="../images/hero.png"
+                    src="../../images/hero.png"
                     alt="Canada’s #1 Social Casino Experience"
+                    width={512}
+                    height={616}
+                    placeholder={`blur`}
                 />
             </div><div className="vw-banner-item">
                 <h1 className='vw-banner-title'>Canada’s <span style={{ color: "var(--color-secondary)" }}>#1 </span>
@@ -20,6 +23,6 @@ const Banner = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Banner;

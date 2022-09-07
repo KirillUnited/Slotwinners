@@ -9,7 +9,7 @@ export default function IndexPage() {
       <Section>
         <Banner />
       </Section>
-      <Section>
+      <Section id="games">
         <h2>Most popular games 2021</h2>
       </Section>
       <Section>
@@ -36,13 +36,15 @@ export default function IndexPage() {
           </div>
         </div>
       </Section>
-      <Section>
+      <Section id={`reviews`}>
         <h2>Awesome reviews</h2>
         <p>Enjoy playing the most popular online slots.
           Free, fun and legal!</p>
       </Section>
-      <Section>
+      <Section id={`features`}>
         <h2>Our features</h2>
+      </Section>
+      <Section>
         <div className="vw-grid vw-grid-col-2">
           <div className="vw-grid-item">
             <h3>Like to play slot games?</h3>
