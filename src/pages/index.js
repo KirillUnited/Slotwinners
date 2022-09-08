@@ -7,6 +7,7 @@ import {GatsbyImage} from "gatsby-plugin-image";
 import Reviews from "../components/reviews/reviews";
 import Features from "../components/features/features";
 import Brands from "../components/brands/brands";
+import Subscribe from "../components/subscribe/subscribe";
 
 export default function IndexPage({data}) {
     const {nodes} = data?.allFile || {};
@@ -57,6 +58,9 @@ export default function IndexPage({data}) {
             </Section>
             <Section content={`content`}>
                 <Features/>
+            </Section>
+            <Section content={`content`}>
+                <Subscribe/>
             </Section>
         </Layout>
     )

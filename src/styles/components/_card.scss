@@ -6,7 +6,7 @@
     border-radius: getMinMax(20px, 26px);
     padding: getMinMax(20px, 24px);
 
-    & > * {
+    &-item {
         padding: getMinMax(10px, 16px);
     }
 
@@ -47,6 +47,7 @@
         .card-header {
             display: flex;
             justify-content: center;
+            flex: 0 0 40%;
         }
 
         @include more-sm() {

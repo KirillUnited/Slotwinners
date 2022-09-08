@@ -16,6 +16,18 @@
     }
 }
 
+@mixin more-xs($max: map-get($grid-breakpoints, "xs")) {
+    @media (min-width: ($max + 1px)) {
+        @content;
+    }
+}
+
+@mixin less-xs($max: map-get($grid-breakpoints, "xs")) {
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
 // placeholders
 @mixin input-placeholder {
     &.placeholder {
@@ -218,7 +230,7 @@
     @media screen and (-ms-high-contrast: active) {
         border: 2px solid currentColor;
     }
-    
+
     &:focus {
         outline-color: transparent;
         outline-style: solid;

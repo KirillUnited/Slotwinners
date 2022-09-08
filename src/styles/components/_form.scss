@@ -1,8 +1,5 @@
-@import "../../styles/utilities";
-
-.vw-form {
+.form {
     $font-size: 12px;
-    background-image: url("../../images/vip club web@2x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,27 +26,35 @@
         line-height: calc(32/23)*1em;
     }
 
-    &-input,
-    input {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        padding: calc(10px / $font-size) * 1em calc(16px / $font-size) * 1em;
-        background-color: #202255;
-        border: 1px solid transparent;
-        transition: all 180ms ease-in-out;
-        box-shadow: none;
-        margin-bottom: 0;
-        line-height: 1;
-        color: #9EA3D8;
+    &-input {
+        $font-size: 17px;
+        input {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            min-height: 44px;
+            color: var(--text-color-1);
+            font-family: 'Syne', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: $font-size;
+            line-height: calc(24px/$font-size)*1em;
+            padding: calc(10px / $font-size) * 1em calc(16px / $font-size) * 1em;
+            background-color: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(6px);
+            transition: all 180ms ease-in-out;
+            border: none;
+            border-radius: calc(6px / $font-size) * 1em;
+            margin-bottom: 0;
 
-        @include input-placeholder {
-            color: #9EA3D8;
-        }
+            @include input-placeholder {
+                color: var(--text-color-1);
+            }
 
-        &:focus {
-            outline: 0;
-            outline-offset: 0;
+            &:focus {
+                outline: 0;
+                outline-offset: 0;
+            }
         }
     }
 
@@ -64,6 +69,7 @@
         button {
             flex: 0 0 148px;
         }
+
         input {
             flex: 1;
         }
@@ -102,9 +108,10 @@
         }
     }
 
-    @include less-sm(){
+    @include less-sm() {
         &-group {
             grid-template-columns: auto;
+
             button,
             input {
                 flex: 0 0 100%;

@@ -4,7 +4,7 @@ import Rating from "../rating/rating";
 const Card = ({type = "v-1", title, desc, avatar, rating, body}) => {
     return (
         <div className={`card card-${type}`}>
-            <div className="card-header">
+            <div className="card-header card-item">
                 <img className={`card-img`} src={avatar} alt={title} width={64} height={64}/>
                 {
                     type === "v-1"
@@ -15,11 +15,11 @@ const Card = ({type = "v-1", title, desc, avatar, rating, body}) => {
                     </div>
                 }
             </div>
-            <div dangerouslySetInnerHTML={{__html: body}} className="card-body"/>
+            <div dangerouslySetInnerHTML={{__html: body}} className="card-body card-item"/>
             {
                 type === "v-1"
                 &&
-                <div className="card-footer">
+                <div className="card-footer card-item">
                     <Rating rating={rating} max={5}/>
                 </div>
             }

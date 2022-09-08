@@ -27,6 +27,18 @@
     }
 }
 
+.hidden-more-xs {
+    @include more-xs() {
+        display: none !important;
+    }
+}
+
+.hidden-less-xs {
+    @include less-xs() {
+        display: none !important;
+    }
+}
+
 .list-style-reset {
     list-style: none;
     padding: 0;

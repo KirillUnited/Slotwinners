@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Picture({ data = {}, text, breakpoints, ...props }) {
+function Picture({ src = "", srcSet="", text, breakpoint = "767px", ...props }) {
     return (
         <picture {...props}>
-            <source media="(max-width: 768px)"
-                srcSet={data["768px"]} />
-            <img src={data["default"]}
+            <source media={`(max-width: ${breakpoint})`}
+                srcSet={srcSet} />
+            <img src={src}
                 alt={text} />
         </picture>
     )
