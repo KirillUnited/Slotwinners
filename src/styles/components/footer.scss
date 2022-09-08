@@ -1,0 +1,85 @@
+.footer {
+    &-inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr min(100%, 23%);
+        justify-content: space-between;
+        gap: getMinMax(40px, 40px);
+        padding-top: getMinMax(20px, 49px);
+        padding-bottom: getMinMax(20px, 49px);
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+            bottom: 0;
+            right: 25%;
+            width: getMinMax(157px, 209px);
+            height: getMinMax(80px, 104px);
+            background-image: url("../images/footer-bg-bottom.png");
+        }
+    }
+
+    &-info {
+        width: min(100%, getrem(708px));
+    }
+
+    &-contact {
+        width: min(100%, 420px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-list {
+            list-style-type: disc;
+            padding-left: 20px;
+
+            > li {
+                margin-bottom: getMinMax(6px, 10px);
+
+                &::marker {
+                    color: #3040F5;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                > a {
+                    display: block;
+                    font-family: 'Syne', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: getMinMax(14px, 14px);
+                    line-height: calc(24/12)*1em;
+                    color: var(--text-color-1);
+                }
+            }
+        }
+    }
+
+    &-title {
+        margin-bottom: getMinMax(20px, 24px);
+    }
+
+    p {
+        font-size: getMinMax(14px, 14px);
+        line-height: calc(24/12)*1em;
+    }
+
+    @include less-sm() {
+        &-inner {
+            grid-template-columns: auto;
+            flex-direction: column;
+            align-items: center;
+
+            &::after {
+                right: 0;
+            }
+        }
+    }
+}

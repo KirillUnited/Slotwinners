@@ -50,6 +50,11 @@
             flex: 0 0 40%;
         }
 
+        p {
+            font-size: getMinMax(14px, 14px);
+            line-height: (24/14)*1em;
+        }
+
         @include more-sm() {
             flex-direction: row-reverse;
             align-items: center;

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./footer.scss";
+import {Link} from "gatsby";
 
 const Footer = () => {
     return (
@@ -7,24 +7,28 @@ const Footer = () => {
             <div className='vw-container'>
                 <div className='footer-inner'>
                     <div className="footer-info">
+                        <h3 className={`footer-title`}>About Us</h3>
                         <p>
-                            Alle auf dieser Website aufgeführten Angebote und Aktionen unterliegen bestimmten
-                            Bedingungen und Verkaufserfordernissen des jeweiligen Anbieters. Im In den meisten Fällen
-                            sind nur Neukunden berechtigt, Angebote, Werbeaktionen und Boni zu erhalten. Die
-                            tatsächliche Höhe des Bonus hängt von der individuellen Einzahlungsbetrag. Bitte spielen Sie
-                            verantwortungsbewusst, da Glücksspiel süchtig machen kann. Sie müssen mindestens 18 Jahre
-                            alt sein, um diese Website nutzen zu können und die Angebote der Online-Casinos.
+                            © Copyright GoldenLionGames {new Date().getFullYear()}. For adult audience only. There is no
+                            possibility for actual cash playing or winning actual cash or any prizes on the website.
+                            Practice or success at social casino gaming does not imply future success at real money
+                            gambling and gaming.
                         </p>
                     </div>
-                    <div className="footer-form">
-                        <ul className="footer-icons list-style-reset">
-                            <li><img src={`./icons/service.svg`} alt="Superbonus"/></li>
-                            <li><img src={`./icons/service-3.svg`} alt="Superbonus"/></li>
-                            <li><img src={`./icons/service-2.svg`} alt="Superbonus"/></li>
-                            <li><img src={`./icons/service-1.svg`} alt="Superbonus"/></li>
+                    <div className="footer-contact">
+                        <h3 className={`footer-title`}>Information</h3>
+                        <ul className="footer-contact-list list-style-reset">
+                            <li>
+                                <Link to={`/`}>
+                                    Terms of Use
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={`/`}>
+                                    Privacy Policy
+                                </Link>
+                            </li>
                         </ul>
-                        <p className="copy">Copyright © {new Date().getFullYear()} Casino-Leitfaden. Alle Rechte
-                            vorbehalten.</p>
                     </div>
                 </div>
             </div>
