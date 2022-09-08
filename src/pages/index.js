@@ -6,6 +6,7 @@ import {graphql} from "gatsby";
 import {GatsbyImage} from "gatsby-plugin-image";
 import Reviews from "../components/reviews/reviews";
 import Features from "../components/features/features";
+import Brands from "../components/brands/brands";
 
 export default function IndexPage({data}) {
     const {nodes} = data?.allFile || {};
@@ -47,6 +48,9 @@ export default function IndexPage({data}) {
             </Section>
             <Section content={`content`}>
                 <Reviews/>
+            </Section>
+            <Section content={`content`}>
+                <Brands/>
             </Section>
             <Section id={`features`} content={`header`}>
                 <h2>Our features</h2>
