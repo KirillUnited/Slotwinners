@@ -4,9 +4,10 @@ import Banner from "../components/banner/banner";
 import Seo from "../components/seo";
 import {graphql} from "gatsby";
 import {GatsbyImage} from "gatsby-plugin-image";
+import Reviews from "../components/reviews/reviews";
 
 export default function IndexPage({data}) {
-    const {nodes} = data?.allMarkdownRemark || {};
+    const {nodes} = data?.allFile || {};
 
     return (
         <Layout>
@@ -22,7 +23,7 @@ export default function IndexPage({data}) {
                     <Section content={`content`}>
                         <div className="vw-grid vw-grid-col-4 vw-grid-col-fill">
                             {nodes.map((game, index) => {
-                                const {title, image} = game.frontmatter;
+                                const {title, image} = game.childMarkdownRemark.frontmatter;
 
                                 return (
                                     <div className="vw-grid-item" key={index}>
@@ -43,8 +44,9 @@ export default function IndexPage({data}) {
 
             <Section id={`reviews`} content={`header`}>
                 <h2>Awesome reviews</h2>
-                <p>Enjoy playing the most popular online slots.
-                    Free, fun and legal!</p>
+            </Section>
+            <Section content={`content`}>
+                <Reviews/>
             </Section>
             <Section id={`features`} content={`header`}>
                 <h2>Our features</h2>
@@ -81,19 +83,20 @@ export const Head = () => <Seo title="Dark Theme"/>;
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
-      nodes {
-        html
-        frontmatter {
-          image {
-            childImageSharp {
-              gatsbyImageData(
+    allFile(filter: {relativeDirectory: {eq: "games"}}) {
+    nodes {
+        childMarkdownRemark {
+          frontmatter {
+            title
+            image {
+              childImageSharp {
+                gatsbyImageData(
                 layout: FULL_WIDTH
                 placeholder: BLURRED
               )
+              }
             }
           }
-          title
         }
       }
     }
