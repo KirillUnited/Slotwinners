@@ -11,6 +11,7 @@ const Reviews = () => {
             frontmatter {
               title
               desc
+              rating              
               avatar {
                 childImageSharp {
                   original {
@@ -31,11 +32,17 @@ const Reviews = () => {
         <div className="reviews">
             <div className="vw-grid vw-grid-col-4 vw-grid-col-fill">
                 {nodes.map((review, index) => {
-                    const {title, desc, avatar} = review.childMarkdownRemark.frontmatter;
+                    const {title, desc, avatar, rating} = review.childMarkdownRemark.frontmatter;
                     const {html} = review.childMarkdownRemark;
 
                     return (
-                        <Card title={title} desc={desc} avatar={avatar.childImageSharp.original.src} body={html} key={index}/>
+                        <Card
+                            title={title}
+                            desc={desc}
+                            avatar={avatar.childImageSharp.original.src}
+                            rating={rating.toFixed(0)}
+                            body={html}
+                            key={index}/>
                     )
                 })}
             </div>

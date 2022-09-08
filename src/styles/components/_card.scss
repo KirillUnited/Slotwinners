@@ -1,3 +1,36 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: getMinMax(20px, 26px);
+    padding: getMinMax(20px, 24px);
 
+    &>* {
+        padding: getMinMax(10px, 16px);
+    }
+
+    &-header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: getMinMax(16px, 16px);
+    }
+
+    &-body {
+        flex: 1;
+        &>* {
+            --lines: 5;
+            @include line-clamp(var(--lines));
+        }
+    }
+
+    &-img {
+        width: getMinMax(52px, 64px);
+        height: getMinMax(52px, 64px);
+        border-radius: 100%;
+    }
+    &-footer {
+        display: flex;
+    }
 }

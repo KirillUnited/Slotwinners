@@ -30,7 +30,6 @@ export default function IndexPage({data}) {
                                         <GatsbyImage
                                             alt={title}
                                             image={image.childImageSharp.gatsbyImageData}
-                                            layout="FULL_WIDTH"
                                             style={{marginBottom: "24px"}}
                                         />
                                         <h4 style={{fontSize: "16px", fontWeight: "600"}}>{title}</h4>

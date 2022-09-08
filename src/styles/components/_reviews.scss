@@ -1,5 +1,45 @@
 .reviews {
+    position: relative;
+
+    &::after,
+    &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &::after {
+        top: -106px;
+        right: -49px;
+        width: getMinMax(80px,180px);
+        height: getMinMax(80px,180px);
+        background-image: url("../images/reviews-bg-top.png");
+    }
+
+    &::before {
+        bottom: -55px;
+        left: -76px;
+        width: getMinMax(71px, 138px);
+        height: getMinMax(71px, 138px);
+        background-image: url("../images/reviews-bg-bottom.png");
+    }
+
     .vw-grid {
         --column-width: 384px;
+    }
+    @include less-sm(){
+        &::after {
+            top: -42px;
+            right: 0;
+        }
+
+        &::before {
+            bottom: 17px;
+            left: -24px;
+        }
     }
 }

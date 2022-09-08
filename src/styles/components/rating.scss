@@ -1,0 +1,12 @@
+.rating {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: getMinMax(12px, 12px);
+
+    &-star {
+        width: getMinMax(20px, 20px);
+        height: getMinMax(20px, 20px);
+    }
+}
