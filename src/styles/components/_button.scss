@@ -1,12 +1,12 @@
 a.button,
 .button {
-    $fonstSize: getMinMax(16px, 16px);
+    $fontSize: getMinMax(16px, 16px);
     $height: getMinMax(44px, 44px);
-    --border-radius: #{calc(6/15)*1em};
+    --border-radius: #{calc(6/16)*1em};
     --border-color-invert: rgba(255, 255, 255, 0.2);
     --bg-color-invert-hover: rgba(255, 255, 255, 0.12);
 
-    @include button($fonstSize, $height);
+    @include button($fontSize, $height);
     background: var(--bg-color-accent);
     background-clip: padding-box;
     border-radius: var(--border-radius);
