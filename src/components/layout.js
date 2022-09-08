@@ -13,29 +13,29 @@ import Header from "./header/header";
 import Footer from "./footer/footer";
 import "../styles/main.scss";
 
-const Layout = ({ children }) => {
-  return (
-    <div className="vw-wrapper">
-      <Header />
-      <main className="vw-content">{children}</main>
-      <Footer />
-    </div>
-  )
+const Layout = ({children}) => {
+    return (
+        <div className="vw-wrapper">
+            <Header/>
+            <main className="vw-content">{children}</main>
+            <Footer/>
+        </div>
+    )
 }
 
-const Section = ({ children, ...rest }) => {
-  return (
-    <div className={`vw-section ${rest.classes || ''}`} {...rest}>
-      <div className='vw-container'>
-        <div className='vw-section-content'>{children}</div>
-      </div>
-    </div>
-  )
+const Section = ({children, content = "content", ...rest}) => {
+    return (
+        <section className={`vw-section ${rest.classes || ''}`} {...rest}>
+            <div className={`vw-section-${content}`}>
+                <div className='vw-container'>{children}</div>
+            </div>
+        </section>
+    )
 };
 
 export default Layout;
-export { Section };
+export {Section};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 }

@@ -3,8 +3,8 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
-        padding-top: getMinMax(20px, 35px);
-        padding-bottom: getMinMax(20px, 35px);
+        padding-top: getMinMax(10px, 35px);
+        padding-bottom: getMinMax(10px, 35px);
     }
 
     &-menu {

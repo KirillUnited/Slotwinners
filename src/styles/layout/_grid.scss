@@ -1,5 +1,5 @@
 .vw-grid {
-    --gap: #{getMinMax(24px, 48px)};
+    --gap: #{getMinMax(24px, 48px)} #{getMinMax(24px, 48px)};
 
     display: grid;
     grid-template-columns: auto 1fr;
@@ -16,6 +16,7 @@
 
     &-col-4 {
         --column-width: 276px;
+        --gap: #{getMinMax(24px, 24px)} #{getMinMax(24px, 48px)};
     }
 
     &-col-fill {

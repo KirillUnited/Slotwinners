@@ -38,9 +38,21 @@ body {
 .vw-section {
     position: relative;
 
+    &-header {
+        padding-top: getMinMax(25px, 40px);
+        padding-bottom: getMinMax(10px, 20px);
+    }
+
     &-content {
-        padding-top: getMinMax(30px, 30px);
-        padding-bottom: getMinMax(15px, 15px);
+        padding-top: getMinMax(25px, 40px);
+        padding-bottom: getMinMax(25px, 40px);
+    }
+
+    @include less-sm() {
+        &-banner {
+            padding-top: getMinMax(10px, 10px);
+            padding-bottom: getMinMax(25px, 25px);
+        }
     }
 }
 

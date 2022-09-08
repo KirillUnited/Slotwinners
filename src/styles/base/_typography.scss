@@ -11,6 +11,9 @@
         // word-break: break-word; // See reset.css
         // Optional, not supported for all languages:
         // hyphens: auto; // See reset.css
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -52,6 +55,9 @@ li,
 
 p {
     margin: 0 0 calc(24px / $text-font-size) * 1em;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 a,
