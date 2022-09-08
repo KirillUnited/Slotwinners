@@ -11,7 +11,7 @@
 
     &-col-2 {
         --column-width: 600px;
-        --gap: #{getMinMax(40px, 48px)};
+        --gap: #{getMinMax(40px, 48px)} #{getMinMax(40px, 48px)};
     }
 
     &-col-4 {

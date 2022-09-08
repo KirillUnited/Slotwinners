@@ -39,6 +39,7 @@ body {
     position: relative;
 
     &-header {
+        text-align: center;
         padding-top: getMinMax(25px, 40px);
         padding-bottom: getMinMax(10px, 20px);
     }

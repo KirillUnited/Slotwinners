@@ -5,6 +5,7 @@ import Seo from "../components/seo";
 import {graphql} from "gatsby";
 import {GatsbyImage} from "gatsby-plugin-image";
 import Reviews from "../components/reviews/reviews";
+import Features from "../components/features/features";
 
 export default function IndexPage({data}) {
     const {nodes} = data?.allFile || {};
@@ -18,7 +19,7 @@ export default function IndexPage({data}) {
                 nodes &&
                 <>
                     <Section id="games" content={`header`}>
-                        <h2>Most popular games 2021</h2>
+                        <h2 style={{textAlign: "left"}}>Most popular games 2021</h2>
                     </Section>
                     <Section content={`content`}>
                         <div className="vw-grid vw-grid-col-4 vw-grid-col-fill">
@@ -51,28 +52,7 @@ export default function IndexPage({data}) {
                 <h2>Our features</h2>
             </Section>
             <Section content={`content`}>
-                <div className="vw-grid vw-grid-col-2">
-                    <div className="vw-grid-item">
-                        <h3>Like to play slot games?</h3>
-                        <p>Enjoy playing the most popular online slots.
-                            Free, fun and legal!</p>
-                    </div>
-                    <div className="vw-grid-item">
-                        <h3>Like to play slot games?</h3>
-                        <p>Enjoy playing the most popular online slots.
-                            Free, fun and legal!</p>
-                    </div>
-                    <div className="vw-grid-item">
-                        <h3>Like to play slot games?</h3>
-                        <p>Enjoy playing the most popular online slots.
-                            Free, fun and legal!</p>
-                    </div>
-                    <div className="vw-grid-item">
-                        <h3>Like to play slot games?</h3>
-                        <p>Enjoy playing the most popular online slots.
-                            Free, fun and legal!</p>
-                    </div>
-                </div>
+                <Features/>
             </Section>
         </Layout>
     )

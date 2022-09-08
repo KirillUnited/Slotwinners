@@ -6,7 +6,7 @@
     border-radius: getMinMax(20px, 26px);
     padding: getMinMax(20px, 24px);
 
-    &>* {
+    & > * {
         padding: getMinMax(10px, 16px);
     }
 
@@ -19,7 +19,8 @@
 
     &-body {
         flex: 1;
-        &>* {
+
+        & > * {
             --lines: 5;
             @include line-clamp(var(--lines));
         }
@@ -30,7 +31,28 @@
         height: getMinMax(52px, 64px);
         border-radius: 100%;
     }
+
     &-footer {
         display: flex;
+    }
+
+    &-v-2 {
+        text-align: center;
+
+        .card-img {
+            width: getMinMax(80px, 140px);
+            height: getMinMax(80px, 140px);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include more-sm() {
+            flex-direction: row-reverse;
+            align-items: center;
+            text-align: left;
+        }
     }
 }
