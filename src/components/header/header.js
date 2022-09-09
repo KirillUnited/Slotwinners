@@ -5,13 +5,38 @@ import logo from "../../images/logo.svg";
 import Button from "../button/button";
 import HeaderMobile from "./headerMobile";
 import {useState} from "react";
+import Modal from "../modal/modal";
+import Layout from "../layout";
 
 const Header = (props) => {
     const [menuActive, setMenuActive] = useState(false);
     const handleMenuState = (prevState) => {
         setMenuActive(prevFormData => !prevFormData);
     };
+    const [isModal, setModal] = useState(false);
     return (<header className={`header ${menuActive ? "header-menu-active" : ""}`}>
+        <Modal
+            isVisible={isModal}
+            title="Modal Title"
+            content={
+                <p style={{textAlign: "center"}}>We use third-party cookies in order to
+                    personalize your site experience.</p>
+            }
+            footer={
+                <>
+                    <Button onClick={() => setModal(false)}>
+                        Allow
+                    </Button>
+                    <Button
+                        state={`button-invert`}
+                        onClick={() => setModal(false)}
+                    >
+                        Decline
+                    </Button>
+                </>
+            }
+            onClose={() => setModal(false)}
+        />
         <HeaderMobile handleMenu={handleMenuState}/>
         <div onClick={handleMenuState} className="header-container vw-container">
             <div onClick={(e) => e.stopPropagation()} className="header-inner">

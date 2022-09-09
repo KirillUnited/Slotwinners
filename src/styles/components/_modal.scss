@@ -1,0 +1,119 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.72);
+    animation-name: appear;
+    animation-duration: 300ms;
+
+    p {
+        color: var(--text-color-1);
+    }
+
+    &[data-cookie] {
+        .modal-dialog {
+            width: min(100%, getrem(340px));
+        }
+        .modal-close{
+            display: none;
+        }
+        .modal-header{
+            padding: 24px 24px 8px;
+        }
+        .modal-footer{
+            padding: 8px 24px 24px;
+            margin: -8px;
+            &>* {
+                margin: 8px;
+            }
+            .button {
+                min-width: 8ch;
+            }
+        }
+        .modal-content{
+            padding: 8px 24px;
+        }
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    margin: 0 getMinMax(24px, 24px);
+    max-height: calc(100vh - 24px);
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border-radius: getMinMax(20px, 24px);
+    overflow: hidden;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+}
+
+.modal-header,
+.modal-footer {
+    display: flex;
+    align-items: center;
+    padding-left: getMinMax(32px, 40px);
+    padding-right: getMinMax(32px, 40px);
+}
+
+.modal-header {
+    justify-content: center;
+    padding-top: getMinMax(32px, 40px);
+    padding-bottom: getMinMax(20px, 20px);
+}
+
+.modal-footer {
+    justify-content: center;
+    padding-top: getMinMax(20px, 20px);
+    padding-bottom: getMinMax(32px, 40px);
+}
+
+.modal-content {
+    padding: getMinMax(20px, 20px) getMinMax(32px, 40px);
+    overflow: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: getMinMax(14px, 14px) getMinMax(24px, 24px);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

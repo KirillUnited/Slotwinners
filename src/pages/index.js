@@ -8,12 +8,43 @@ import Reviews from "../components/reviews/reviews";
 import Features from "../components/features/features";
 import Brands from "../components/brands/brands";
 import Subscribe from "../components/subscribe/subscribe";
+import Modal from "../components/modal/modal";
+import {useState} from "react";
+import Button from "../components/button/button";
+import cookieIcon from "../images/Cookie.svg";
 
 export default function IndexPage({data}) {
     const {nodes} = data?.allFile || {};
+    const [isCookieModal, setCookieModal] = useState(true);
 
     return (
         <Layout>
+            <Modal
+                data-cookie
+                isVisible={isCookieModal}
+                title="Cookie"
+                header={
+                    <img src={cookieIcon} width={48} height={48} alt="Cookie"/>
+                }
+                content={
+                    <p style={{textAlign: "center"}}>We use third-party <a href={`/`}>cookies</a> in order to
+                        personalize your site experience.</p>
+                }
+                footer={
+                    <>
+                        <Button onClick={() => setCookieModal(false)}>
+                            Allow
+                        </Button>
+                        <Button
+                            state={`button-invert`}
+                            onClick={() => setCookieModal(false)}
+                        >
+                            Decline
+                        </Button>
+                    </>
+                }
+                onClose={() => setCookieModal(false)}
+            />
             <Section content={`banner`}>
                 <Banner/>
             </Section>

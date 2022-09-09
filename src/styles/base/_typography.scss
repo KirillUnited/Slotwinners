@@ -50,7 +50,7 @@ li,
     font-size: getrem($text-font-size);
     font-size: Min(getvw($text-font-size-sm), getrem($text-font-size));
     font-weight: 400;
-    line-height: normal;
+    line-height: calc(24px/$text-font-size);
 }
 
 p {
@@ -60,6 +60,9 @@ p {
     }
 }
 
+a {
+
+}
 a,
 a:active,
 a:hover,
