@@ -1,0 +1,22 @@
+.slider {
+    &.swiper-horizontal > .swiper-pagination-bullets,
+    &.swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: getMinMax(60px, 80px);
+
+        .swiper-pagination-bullet-active {
+            --swiper-theme-color: var(--color-secondary);
+            width: 20px;
+            height: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            --swiper-pagination-bullet-size: 12px;
+            --swiper-pagination-bullet-inactive-color: var(--color-secondary);
+            --swiper-pagination-bullet-inactive-opacity: 0.5;
+        }
+    }
+}

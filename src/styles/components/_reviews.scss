@@ -21,15 +21,18 @@
     }
 
     &::before {
-        bottom: -55px;
+        bottom: 30px;
         left: -76px;
-        width: getMinMax(71px, 138px);
-        height: getMinMax(71px, 138px);
+        width: getMinMax(90px, 138px);
+        height: getMinMax(90px, 138px);
         background-image: url("../images/reviews-bg-bottom.png");
     }
 
     .vw-grid {
         --column-width: 384px;
+    }
+    .swiper-wrapper {
+        height: getMinMax(316px, 368px);
     }
     @include less-sm(){
         &::after {
@@ -40,6 +43,20 @@
         &::before {
             bottom: 17px;
             left: -24px;
+        }
+    }
+    @include less-xs(){
+        &::after {
+            top: -42px;
+            right: 18px;
+        }
+
+        &::before {
+            bottom: 90px;
+            left: 4px;
+        }
+        .swiper-slide {
+            width: getMinMax(296px, 296px);
         }
     }
 }

@@ -55,6 +55,13 @@ body {
             padding-bottom: getMinMax(25px, 25px);
         }
     }
+    @include less-xs() {
+        &.has-slider {
+            .vw-container {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @include less-sm {
