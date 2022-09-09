@@ -15,31 +15,43 @@
 
     p {
         color: var(--text-color-1);
+        font-size: 14px;
     }
 
     &[data-cookie] {
         .modal-dialog {
             width: min(100%, getrem(340px));
         }
-        .modal-close{
+
+        .modal-close {
             display: none;
         }
-        .modal-header{
+
+        .modal-header {
             padding: 24px 24px 8px;
         }
-        .modal-footer{
+
+        .modal-footer {
+            flex-direction: row;
             padding: 8px 24px 24px;
-            margin: -8px;
-            &>* {
-                margin: 8px;
+            margin-left: -8px;
+            margin-right: -8px;
+
+            & > * {
+                margin-left: 8px;
+                margin-right: 8px;
+                margin-bottom: 0;
             }
+
             .button {
                 min-width: 8ch;
             }
         }
-        .modal-content{
+
+        .modal-content {
             padding: 8px 24px;
         }
+
         a {
             color: inherit;
             text-decoration: underline;
@@ -48,8 +60,7 @@
 }
 
 .modal-dialog {
-    width: 100%;
-    max-width: 550px;
+    width: min(100%, getrem(608px));
     position: relative;
     margin: 0 getMinMax(24px, 24px);
     max-height: calc(100vh - 24px);
@@ -69,6 +80,7 @@
 .modal-header,
 .modal-footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding-left: getMinMax(32px, 40px);
     padding-right: getMinMax(32px, 40px);
@@ -84,6 +96,15 @@
     justify-content: center;
     padding-top: getMinMax(20px, 20px);
     padding-bottom: getMinMax(32px, 40px);
+
+    .button {
+        min-width: 21ch;
+        margin-bottom: 20px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
 
 .modal-content {
@@ -98,6 +119,11 @@
     cursor: pointer;
     font-size: 20px;
     padding: getMinMax(14px, 14px) getMinMax(24px, 24px);
+}
+
+.modal-title {
+    font-size: 32px;
+    margin-bottom: 0;
 }
 
 @keyframes appear {

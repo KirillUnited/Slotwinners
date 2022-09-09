@@ -206,7 +206,6 @@
 @mixin button($fontSize: 16px, $height: auto) {
     display: inline-flex;
     align-items: center;
-    align-self: start;
     justify-content: center;
     min-width: 11ch;
     min-height: $height;

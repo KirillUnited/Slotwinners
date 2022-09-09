@@ -1,33 +1,13 @@
 .form {
-    $font-size: 12px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #111332;
-    box-shadow: 0px 16px 54px rgba(8, 10, 22, 0.2), 0px 8px 20px rgba(8, 10, 22, 0.4);
-    border-radius: 12px;
+    $font-size: 16px;
 
-    &-block {
-        position: relative;
-        padding: 24px 30px;
-
-        &.has-img {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
-
-        & + .vw-form-block {
-            border-top: 1px solid #373D76;
-        }
-    }
-
-    &-title {
-        font-size: getMinMax(18px, 23px);
-        line-height: calc(32/23)*1em;
+    &-fieldset {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 244px), 1fr));
+        gap: 24px;
     }
 
     &-input {
-        $font-size: 17px;
         input {
             display: block;
             width: 100%;
@@ -39,7 +19,7 @@
             font-weight: 500;
             font-size: $font-size;
             line-height: calc(24px/$font-size)*1em;
-            padding: calc(10px / $font-size) * 1em calc(16px / $font-size) * 1em;
+            padding: calc(10px / $font-size) * 1em calc(12px / $font-size) * 1em;
             background-color: rgba(255, 255, 255, 0.12);
             backdrop-filter: blur(6px);
             transition: all 180ms ease-in-out;
@@ -83,29 +63,8 @@
         transform: translateX(-50%);
     }
 
-    input,
-    button {
-        font-size: getMinMax(12px, 12px);
-        min-height: getMinMax(44px, 44px);
-        border-radius: calc(8px / $font-size) * 1em;
-    }
-
-    button {
-        width: 100%;
-    }
-
     textarea {
         resize: vertical;
-    }
-
-    .privacy {
-        font-size: 11px;
-        line-height: calc(18/11)*1em;
-
-        a {
-            color: #ffffff;
-            text-decoration: underline;
-        }
     }
 
     @include less-sm() {
@@ -115,12 +74,6 @@
             button,
             input {
                 flex: 0 0 100%;
-            }
-        }
-        &-block {
-            &.has-img {
-                padding-top: getvw(50px);
-                padding-bottom: getvw(50px);
             }
         }
         &-img {

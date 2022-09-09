@@ -1,24 +1,18 @@
 import React from 'react';
-import Button from "../button/button";
 
 const Form = ({id}) => {
     return (
         <form className="form" id={id} method="POST" action="">
-            {/*<div className="form-block has-img">*/}
-            {/*    /!*<img className={`form-img`} src={} alt=""/>*!/*/}
-            {/*</div>*/}
-            {/*<fieldset className="form-fieldset">*/}
-            {/*    <div className="form-block">*/}
-            {/*        <h3 className="form-title">*/}
-            {/*            <span>Join the CasinoGuide </span>*/}
-            {/*            <span style={{color: "#47A9E9"}}>VIP club!</span>*/}
-            {/*        </h3>*/}
-            {/*        <legend className="form-desc vw-text">*/}
-            {/*            Subscribe to our newsletter now and get free access to all exclusive*/}
-            {/*            promotions from the best and most trustable casinos.*/}
-            {/*        </legend>*/}
-            {/*    </div>*/}
-            {/*</fieldset>*/}
+            <fieldset className="form-fieldset">
+                <FormInput type="text" id={`first_name`} placeholder="First name" required/>
+                <FormInput type="text" id={`last_name`} placeholder="Last name"/>
+                <FormInput type="email" id={`email`} placeholder="Email" required/>
+                <FormInput type="phone" id={`phone`} placeholder="Phone number"/>
+                <FormInput type="text" id={`address`} placeholder="Address"/>
+                <FormInput type="text" id={`birthdate`} placeholder="Birthdate"/>
+                <FormInput type="password" id={`password`} placeholder="Password" required/>
+                <FormInput type="password" id={`confirm_password`} placeholder="Confirm password" required/>
+            </fieldset>
         </form>
     )
 };
