@@ -37,7 +37,7 @@ export default function IndexPage({data}) {
                 footer={
                     <>
                         <Button onClick={() => setCookieModal(false)}>
-                            Allow
+                            Accept
                         </Button>
                         <Button
                             state={`button-invert`}
