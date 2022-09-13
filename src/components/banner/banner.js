@@ -12,7 +12,8 @@ const Banner = () => {
                     height={616}
                     placeholder={`blur`}
                 />
-            </div><div className="banner-item">
+            </div>
+            <div className="banner-item">
                 <h1 className='banner-title'>Canada’s <span style={{ color: "var(--color-secondary)" }}>#1 </span>
                     Social Casino
                     Experience</h1>

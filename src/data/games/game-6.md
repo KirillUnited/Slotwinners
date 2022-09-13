@@ -1,4 +1,4 @@
 ---
 title: "Leprechauns Vault"
-image: "../../images/game thumb-6.png"
+image: "../../images/game thumb-5.png"
 ---

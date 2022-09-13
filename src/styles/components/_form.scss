@@ -8,6 +8,18 @@
     }
 
     &-input {
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            top: 50%;
+            right: 13px;
+            transform: translate(0, -50%);
+            width: calc(16px/$font-size)*1em;
+            height: calc(16px/$font-size)*1em;
+            z-index: 10;
+        }
+
         input {
             display: block;
             width: 100%;
@@ -20,6 +32,7 @@
             font-size: $font-size;
             line-height: calc(24px/$font-size)*1em;
             padding: calc(10px / $font-size) * 1em calc(12px / $font-size) * 1em;
+            padding-right: 34px;
             background-color: rgba(255, 255, 255, 0.12);
             backdrop-filter: blur(6px);
             transition: all 180ms ease-in-out;

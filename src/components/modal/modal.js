@@ -2,7 +2,7 @@ import React from "react";
 
 const Modal = ({isVisible = false, title, header, content, footer, onClose, ...rest}) => {
     return !isVisible ? null : (
-        <div className="modal" onClick={onClose} {...rest}>
+        <div className="modal" {...rest}>
             <div className="modal-dialog" onClick={e => e.stopPropagation()}>
                 {
                     header

@@ -52,7 +52,7 @@ export default function IndexPage({data}) {
                 nodes &&
                 <>
                     <Section id="games" content={`header`}>
-                        <h2 style={{textAlign: "left"}}>Most popular games 2021</h2>
+                        <h2 style={{textAlign: "left"}}>Most popular games {new Date().getFullYear()}</h2>
                     </Section>
                     <Section content={`content`}>
                         <div className="vw-grid vw-grid-col-4 vw-grid-col-fill">
