@@ -1,6 +1,6 @@
 ---
-title: "No registration"
+title: "Safety and privacy first"
 image: "../../images/Verified Account.svg"
 ---
-### No registration
-You can play games on Slotwinners without signing up. This is entertainment without giving away your data.
+### Safety and privacy first
+So no registration means total privacy? Not necessarily, but when it comes to Slotwinners you can be sure that there is no catch. You can feel safe with guaranteed anonymity.

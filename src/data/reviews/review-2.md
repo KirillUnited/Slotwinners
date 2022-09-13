@@ -1,8 +1,8 @@
 ---
-title: "Cieran Mccoy"
+title: "Joseph Clarkson"
 desc: "Soccer player"
-avatar: "../../images/avatar-1.jpg"
+avatar: "../../images/avatar-2.jpg"
 rating: 5
 ---
 #### Good experience
-Awesome graphics, no ads. You can actually enjoy the casino experience on this website!
+Slotwinners is so much better than similar gaming sites and apps. Befinitely my favorite for gaming!

@@ -1,8 +1,8 @@
 ---
-title: "Yvonne Tanner"
-desc: "Housewife"
-avatar: "../../images/avatar-2.jpg"
-rating: 5
+title: "Benjamin Wilson"
+desc: "Manager"
+avatar: "../../images/Slotfinders/avatar-1.jpg"
+rating: 4
 ---
 #### Sleepless nights...
-I spend too many hours playing this game - it’s so fun! :) I have wrinkles from sleepless nights due to this addictive games...
+Would like the dark mode better for games. Otherwise ok

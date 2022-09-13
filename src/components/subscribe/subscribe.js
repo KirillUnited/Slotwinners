@@ -9,7 +9,7 @@ const Subscribe = () => {
     return (
         <div id="subscribe" className='subscribe card card-v-2'>
             <div className='card-item'>
-                <h3 className={`subscribe-title`}>Join our VIP club, Sign up by entering your email</h3>
+                <h3 className={`subscribe-title`}>Join the Mailing lists for updates</h3>
                 <form id="subscribeForm" name="subscribeForm" className="subscribe-form" action="/" method="POST">
                     <FormInput
                         type="email"

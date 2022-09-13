@@ -1,6 +1,6 @@
 ---
-title: "Safe and private"
+title: "Have fun with your friends"
 image: "../../images/star-feature.svg"
 ---
-### Safe and private
-You can feel completely safe. We will never ask for your data or push boundaries of your privacy. 
+### Have fun with your friends
+Our shared game option is great for parties – such an easy and fun activity! Play in the same room or across continents and compare scores without any pressure. 

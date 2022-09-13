@@ -1,8 +1,8 @@
 ---
-title: "Eisa Wang"
+title: "Mathew McLean"
 desc: "Manager"
-avatar: "../../images/avatar.jpg"
+avatar: "../../images/avatar-1.jpg"
 rating: 5
 ---
 #### Best one so far!
-I'm always a nut about having fun and not having to pay for it. I have found this to be my favorites out of several I've tried. 
+Must be XXX biggest fan lol. playing all the time 

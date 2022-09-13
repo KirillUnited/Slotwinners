@@ -9,10 +9,11 @@ const Footer = () => {
                     <div className="footer-info">
                         <h3 className={`footer-title`}>About Us</h3>
                         <p>
-                            © Copyright GoldenLionGames {new Date().getFullYear()}. For adult audience only. There is no
-                            possibility for actual cash playing or winning actual cash or any prizes on the website.
-                            Practice or success at social casino gaming does not imply future success at real money
-                            gambling and gaming.
+                            © Copywrite Slotwinners, {new Date().getFullYear()}. Social casino exprience provided by
+                            Slotwinners. All rights on branding, design, games etc. reserved. For 18+ audience only.
+                            Slotwinners is not a gambling site. No money prizes are given for game winners and no charge
+                            of losing is demanded. Practice or success at social casino gaming does not imply future
+                            success at real money gambling or gaming.
                         </p>
                     </div>
                     <div className="footer-contact">

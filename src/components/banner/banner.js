@@ -7,19 +7,16 @@ const Banner = () => {
             <div className="banner-item">
                 <StaticImage
                     src="../../images/hero.png"
-                    alt="Canada’s #1 Social Casino Experience"
+                    alt="Fun slot games online for free!"
                     width={512}
                     height={616}
                     placeholder={`blur`}
                 />
             </div>
             <div className="banner-item">
-                <h1 className='banner-title'>Canada’s <span style={{ color: "var(--color-secondary)" }}>#1 </span>
-                    Social Casino
-                    Experience</h1>
+                <h1 className='banner-title'>Fun slot games online for free!</h1>
                 <h4 className='banner-subtitle'>
-                    Enjoy playing the most popular online slots. <br className='hidden-less-sm' />
-                    Free, fun and legal!
+                    Slotwinners is an online slot gaming site where you can learn the best strategies to win without losing any money
                 </h4>
             </div>
         </div>

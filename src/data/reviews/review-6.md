@@ -1,8 +1,8 @@
 ---
-title: "Eisa Wang"
+title: "Thomas Guined"
 desc: "Manager"
-avatar: "../../images/avatar.jpg"
-rating: 5
+avatar: "../../images/avatar-2.jpg"
+rating: 1
 ---
-#### Best one so far!
-I'm always a nut about having fun and not having to pay for it. I have found this to be my favorites out of several I've tried. 
+#### Cannot find the old games
+Cannot find the old games, liked them better.

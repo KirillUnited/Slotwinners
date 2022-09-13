@@ -1,6 +1,6 @@
 ---
-title: "Play with friends"
+title: "Free of any charge"
 image: "../../images/Lock.svg"
 ---
-### Play with friends
-Relax and enjoy the games without any risk – no money can be lost playing our slot games.
+### Free of any charge
+While other gaming sites will lure you in with sweet promises of free gaming just to ask for a fee after the trial period, we assure you – Slotwinners will not charge you!

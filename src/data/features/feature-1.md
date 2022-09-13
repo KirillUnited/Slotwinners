@@ -1,6 +1,6 @@
 ---
-title: "It's free!"
+title: "Social casino games"
 image: "../../images/Trophy.svg"
 ---
-### It's free!
-Slotwinners is and always will be completely free. No registration fee, no hidden costs, no bidding! Guaranteed.
+### Social casino games
+At Slotwinners you can learn to play, explore the best strategies to win or just play for fun without ever spending your money. No financial details will be required.

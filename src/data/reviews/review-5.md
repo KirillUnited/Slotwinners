@@ -1,8 +1,8 @@
 ---
-title: "Cieran Mccoy"
+title: "Ralf Seignon"
 desc: "Soccer player"
 avatar: "../../images/avatar-1.jpg"
-rating: 5
+rating: 3
 ---
-#### Good experience
-Awesome graphics, no ads. You can actually enjoy the casino experience on this website!
+#### Good ones
+There is only slots but good ones 
