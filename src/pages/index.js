@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import Layout, {Section} from "../components/layout";
 import Banner from "../components/banner/banner";
 import Seo from "../components/seo";
@@ -27,8 +28,11 @@ export default function IndexPage({data}) {
                     <img src={cookieIcon} width={48} height={48} alt="Cookie"/>
                 }
                 content={
-                    <p style={{textAlign: "center"}}>We use third-party <a href={`/`}>cookies</a> in order to
-                        personalize your site experience.</p>
+                    <p style={{textAlign: "center"}}>
+                        By clicking "Accept" you consent to our website`s use of cookies.
+                        We would like to use cookies to enhance your user experience.
+                        (<Link to={`/`}>Cookie Policy</Link>)
+                    </p>
                 }
                 footer={
                     <>

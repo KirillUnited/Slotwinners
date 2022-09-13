@@ -25,6 +25,7 @@
     }
 
     &[data-cookie] {
+        background-color: var(--body-bg-color);
         .modal-dialog {
             width: min(100%, getrem(340px));
         }
