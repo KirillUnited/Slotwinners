@@ -1,6 +1,8 @@
 ---
 url: "privacy"
 ---
+## Privacy policy
+
 Effective date: 2021-10-06
 
 1.Introduction
