@@ -31,7 +31,7 @@ export default function IndexPage({data}) {
                     <p style={{textAlign: "center"}}>
                         By clicking "Accept" you consent to our website`s use of cookies.
                         We would like to use cookies to enhance your user experience.
-                        (<Link to={`/`}>Cookie Policy</Link>)
+                        (<Link to={`/privacy`}>Cookie Policy</Link>)
                     </p>
                 }
                 footer={

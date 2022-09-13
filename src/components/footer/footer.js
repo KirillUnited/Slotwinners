@@ -20,12 +20,12 @@ const Footer = () => {
                         <h3 className={`footer-title`}>Information</h3>
                         <ul className="footer-contact-list list-style-reset">
                             <li>
-                                <Link to={`/`}>
+                                <Link to={`/privacy`}>
                                     Terms of Use
                                 </Link>
                             </li>
                             <li>
-                                <Link to={`/`}>
+                                <Link to={`/privacy`}>
                                     Privacy Policy
                                 </Link>
                             </li>
