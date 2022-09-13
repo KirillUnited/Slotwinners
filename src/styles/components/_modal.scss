@@ -133,6 +133,25 @@
     margin-bottom: 0;
 }
 
+@include less-sm {
+    .modal{
+        overflow: auto;
+        align-items: flex-start;
+        &[data-cookie] {
+            align-items: center;
+        }
+    }
+    .modal-content{
+        overflow: visible;
+    }
+    .modal-dialog{
+        max-height: none;
+        overflow-y: auto;
+        margin-top: getMinMax(24px, 24px);
+        margin-bottom: getMinMax(24px, 24px);
+    }
+}
+
 @keyframes appear {
     from {
         opacity: 0;
