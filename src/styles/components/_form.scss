@@ -18,6 +18,10 @@
             width: calc(16px/$font-size)*1em;
             height: calc(16px/$font-size)*1em;
             z-index: 10;
+            
+            path {
+                fill: var(--text-color-1);
+            }
         }
 
         input {
