@@ -25,7 +25,7 @@ const Layout = ({children}) => {
 
 const Section = ({children, content = "content", ...rest}) => {
     return (
-        <section className={`vw-section ${rest.classes}`} {...rest}>
+        <section className={`vw-section ${rest.classes ? rest.classes : ""}`} {...rest}>
             <div className='vw-container'>
                 <div className={`vw-section-${content}`}>{children}</div>
             </div>

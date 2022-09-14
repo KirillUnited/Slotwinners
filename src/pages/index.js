@@ -92,7 +92,7 @@ export default function IndexPage({ data }) {
             <Section content={`content`} classes="has-slider">
                 <Reviews />
             </Section>
-            <Section content={`content`}>
+            <Section id={`brands`} content={`content`}>
                 <Brands />
             </Section>
             <Section id={`features`} content={`header`}>
