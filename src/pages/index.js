@@ -16,11 +16,10 @@ import cookieIcon from "../images/Cookie.svg";
 
 export default function IndexPage({ data }) {
     const { nodes } = data?.allFile || {};
-    const [isCookieModal, setCookieModal] = useState(true);
+    const [isCookieModal, setCookieModal] = useState(!document.cookie.includes("accepted_cookies="));
 
     return (
         <Layout>
-            {!document.cookie.includes("accepted_cookies=") &&
             <Modal
                 data-cookie
                 isVisible={isCookieModal}
@@ -52,7 +51,7 @@ export default function IndexPage({ data }) {
                     </>
                 }
                 onClose={() => setCookieModal(false)}
-            />}
+            />
             <Section content={`banner`}>
                 <Banner />
             </Section>
