@@ -10,13 +10,17 @@ import Features from "../components/features/features";
 import Brands from "../components/brands/brands";
 import Subscribe from "../components/subscribe/subscribe";
 import Modal from "../components/modal/modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../components/button/button";
 import cookieIcon from "../images/Cookie.svg";
 
 export default function IndexPage({ data }) {
     const { nodes } = data?.allFile || {};
-    const [isCookieModal, setCookieModal] = useState(!document.cookie.includes("accepted_cookies="));
+    const [isCookieModal, setCookieModal] = useState(false);
+
+    useEffect(() => {
+        setCookieModal(!document.cookie.includes("accepted_cookies="));
+    }, []);    
 
     return (
         <Layout>
