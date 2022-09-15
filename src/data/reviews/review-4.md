@@ -1,7 +1,7 @@
 ---
 title: "Benjamin Wilson"
-desc: "Manager"
-avatar: "../../images/Slotfinders/avatar-1.jpg"
+desc: "Soccer Coach"
+avatar: "../../images/Slotwinners/Benjamin Wilson.jpg"
 rating: 4
 ---
 #### Would like the dark mode

@@ -1,7 +1,7 @@
 ---
 title: "Thomas Guined"
-desc: "Manager"
-avatar: "../../images/avatar-2.jpg"
+desc: "Business Executive"
+avatar: "../../images/Slotwinners/Thomas Guined.jpg"
 rating: 1
 ---
 #### Cannot find the old games

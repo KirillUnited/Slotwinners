@@ -1,7 +1,7 @@
 ---
 title: "Joseph Clarkson"
-desc: "Soccer player"
-avatar: "../../images/avatar-2.jpg"
+desc: "Chef"
+avatar: "../../images/Slotwinners/Joseph Clarkson.jpg"
 rating: 5
 ---
 #### Good experience

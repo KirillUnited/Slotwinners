@@ -1,7 +1,7 @@
 ---
 title: "Maurice Gauthier"
-desc: "Manager"
-avatar: "../../images/Slotfinders/avatar-2.jpg"
+desc: "Teacher"
+avatar: "../../images/Slotwinners/Maurice Gauthier.jpg"
 rating: 5
 ---
 #### Sleepless nights...

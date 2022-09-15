@@ -1,8 +1,8 @@
 ---
-title: "Mathew McLean"
-desc: "Manager"
-avatar: "../../images/avatar-1.jpg"
+title: "Matthew Mclean"
+desc: "Fireman"
+avatar: "../../images/Slotwinners/Matthew Mclean .jpg"
 rating: 5
 ---
 #### Best one so far!
-Must be Slotwinners biggest fan lol. playing all the time 
+Must be Slotwinners biggest fan lol. playing all the time

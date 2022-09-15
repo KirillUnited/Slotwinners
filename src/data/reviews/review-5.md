@@ -1,7 +1,7 @@
 ---
 title: "Ralf Seignon"
-desc: "Soccer player"
-avatar: "../../images/avatar-1.jpg"
+desc: "Manager"
+avatar: "../../images/Slotwinners/Ralf Seignon.jpg"
 rating: 3
 ---
 #### Good ones

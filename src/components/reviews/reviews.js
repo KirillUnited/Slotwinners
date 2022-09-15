@@ -15,12 +15,14 @@ const Reviews = () => {
             frontmatter {
               title
               desc
-              rating              
+              rating
               avatar {
                 childImageSharp {
-                  original {
-                    src
-                  }
+                  gatsbyImageData (
+                      quality: 50, 
+                      layout: CONSTRAINED, 
+                      width: 64
+                  )
                 }
               }
             }
@@ -68,7 +70,7 @@ const Reviews = () => {
                             <Card
                                 title={title}
                                 desc={desc}
-                                avatar={avatar.childImageSharp.original.src}
+                                avatar={avatar?.childImageSharp.gatsbyImageData}
                                 rating={rating.toFixed(0)}
                                 body={html}
                             />
