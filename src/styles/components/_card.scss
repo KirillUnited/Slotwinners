@@ -32,7 +32,8 @@
         height: getMinMax(52px, 64px);
         border-radius: 100%;
 
-        img {
+        img,
+        [data-placeholder-image] {
             border-radius: 100%;
         }
     }
