@@ -40,8 +40,8 @@ const Header = (props) => {
                             <FormInput type="phone" id={`phone`} name={`phone`} placeholder="Phone number">
                                 <img src={iPhoneX} className={`form-input-icon`} alt="phone"/>
                             </FormInput>
-                            <FormInput type="text" id={`address`} name={`address`} placeholder="Address">
-                                <img src={Address} className={`form-input-icon`} alt="address"/>
+                            <FormInput type="text" id={`country`} name={`country`} placeholder="Country">
+                                <img src={Address} className={`form-input-icon`} alt="country"/>
                             </FormInput>
                             <FormInput type="text" id={`birthdate`} name={`birthdate`} placeholder="Birthdate">
                                 <img src={Calendar} className={`form-input-icon`} alt="birthdate"/>
