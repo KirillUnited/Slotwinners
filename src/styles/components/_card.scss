@@ -31,6 +31,10 @@
         width: getMinMax(52px, 64px);
         height: getMinMax(52px, 64px);
         border-radius: 100%;
+
+        img {
+            border-radius: 100%;
+        }
     }
 
     &-footer {
