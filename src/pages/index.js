@@ -40,17 +40,17 @@ export default function IndexPage({ data }) {
                 }
                 footer={
                     <>
-                        <Button onClick={() => {
-                            setCookieModal(false);
-                            document.cookie = "accepted_cookies=yes;";
-                        }}>
-                            Accept
-                        </Button>
                         <Button
                             state={`button-invert`}
                             onClick={() => setCookieModal(false)}
                         >
                             Decline
+                        </Button>
+                        <Button onClick={() => {
+                            setCookieModal(false);
+                            document.cookie = "accepted_cookies=yes;";
+                        }}>
+                            Accept
                         </Button>
                     </>
                 }
