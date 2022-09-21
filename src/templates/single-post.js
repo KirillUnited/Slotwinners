@@ -5,7 +5,6 @@ import Seo from "../components/seo"
 
 const SinglePost = ({pageContext}) => (
     <Layout>
-        {console.log(pageContext.html)}
         <Section content={`content`}>
             <div  dangerouslySetInnerHTML={{__html: pageContext.html}}
                   style={{
