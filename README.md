@@ -1,5 +1,5 @@
 <h1>
-  <a href="https://fascinating-cat-c0bf45.netlify.app/" target="_blank">
+  <a href="https://slotwinners.netlify.app/" target="_blank">
     LIVE DEMO
   </a>
 </h1>
